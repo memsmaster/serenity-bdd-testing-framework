@@ -10,6 +10,7 @@ UI/API Test Automation example using Serenity BDD, Cucumber and the Page Object 
 * [Running the tests with Maven]
 * [Viewing the reports]
 * [Adding Tests]
+* [Resources]
 
 
 <!--te-->
@@ -41,7 +42,7 @@ src/main/java/com
 
 src/test/java/com.serenitybdd.test
 └── CucumberTestSuite # Uses Serenity BDD features to run tests and generate detailed reports
-└── TestRunner # Uses Cucumber features to run tests
+└── TestRunner # runs both UI and API
 ```
 ```
 
@@ -78,4 +79,9 @@ To expand the tests in the future:
 
 4. **Add Actions in Respective Action Classes:**
    - Update or create new actions/methods in `actions/` to define actions that can be performed on pages.
+
+## Resources
+https://github.com/serenity-bdd
+https://serenity-bdd.github.io/docs/tutorials/first_test
+https://serenity-bdd.github.io/docs/tutorials/rest
 
