@@ -16,10 +16,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Locale;
 
 public class UiTestSteps {
-    //@Managed
-    //WebDriver driver;
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(UiTestSteps.class);
+    //private static final Logger LOGGER = LoggerFactory.getLogger(UiTestSteps.class);
     LoginSteps login;
     HomeSteps home;
     HomePage homePage;
