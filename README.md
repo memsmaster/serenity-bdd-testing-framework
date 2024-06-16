@@ -4,13 +4,13 @@ UI/API Test Automation example using Serenity BDD, Cucumber and the Page Object 
 
 
 
-* [Application under the Test]
-* [Example Scenarios to Automate]
-* [Project Structure]
-* [Running the tests with Maven]
-* [Viewing the reports]
-* [Adding Tests]
-* [Resources]
+[* [Application under the Test]](## Application under the Test)
+[* [Example Scenarios to Automate]](## Example Scenarios to Automate)
+[* [Project Structure]](## Project Structure)
+* [Running the Rests with Maven](## Running the Tests with Maven)
+* [Viewing the test reports](## Viewing the Test Reports)
+* [Adding Tests](## Adding Tests)
+* [Resources](## Resources)
 
 
 <!--te-->
@@ -49,7 +49,7 @@ src/test/java/com.serenitybdd.test
 Pom.xml
 ```
 
-## Running the tests with Maven
+## Running the Tests with Maven
 
 To run the tests with Maven, open the terminal and run (on Mac):
 
@@ -58,7 +58,7 @@ mvn clean verify
 
 ```
 
-## Viewing the reports
+## Viewing the Test Reports
 
 After running the tests, Serenity BDD reports are generated in HTML format and can be found in the target/site/serenity directory. Open index.html in a web browser to view detailed test reports including test results, screenshots.
 
@@ -82,7 +82,10 @@ To expand the tests in the future:
 
 ## Resources
 https://github.com/serenity-bdd
+
 https://serenity-bdd.github.io/docs/tutorials/first_test
+
 https://serenity-bdd.github.io/docs/tutorials/rest
+
 https://www.youtube.com/watch?v=Us1b191D6pQ
 
