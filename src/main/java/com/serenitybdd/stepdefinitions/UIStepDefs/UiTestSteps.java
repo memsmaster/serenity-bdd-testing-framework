@@ -10,12 +10,16 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.annotations.Managed;
 import org.assertj.core.api.Assertions;
+import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.util.Locale;
 
 public class UiTestSteps {
+    @Managed
+    WebDriver driver;
     //private static final Logger LOGGER = LoggerFactory.getLogger(UiTestSteps.class);
     LoginSteps login;
     HomeSteps home;
@@ -25,6 +29,7 @@ public class UiTestSteps {
     @Given("I am on the home page")
     public void iAmOnTheHomePage() {
         homePage.open();
+        driver.manage().window().maximize();
         try{home.clickConsent();}
         catch(Exception e){System.out.println("Consent button not found, continuing with the test.");
         }
