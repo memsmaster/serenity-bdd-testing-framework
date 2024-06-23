@@ -1,26 +1,20 @@
 package com.serenitybdd.actions.API;
-
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.serenitybdd.config.ConfigurationManager;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.internal.common.assertion.Assertion;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import net.serenitybdd.annotations.Step;
-
-
 import static io.restassured.RestAssured.given;
 import org.assertj.core.api.Assertions;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+
 
 public class ApiActions {
     private RequestSpecification request;
