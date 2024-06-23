@@ -17,7 +17,7 @@ import static org.hamcrest.Matchers.*;
 
 
 public class ApiActions {
-    private RequestSpecification request;
+    private static RequestSpecification request;
     public static String PRODUCTS_LIST_ENDPOINT = "https://automationexercise.com/api/productsList";
     public static String SEARCH_PRODUCT_ENDPOINT = "https://automationexercise.com/api/searchProduct";
 
@@ -73,16 +73,17 @@ public class ApiActions {
                 .when()
                 .post();
     }
+    //TBD
     @Step("Send POST request")
     public static Response postRequest(String endpoint, Object requestBody) {
-        return RestAssured.given()
+        return request
                 .contentType(ContentType.JSON)
                 .body(requestBody)
                 .post(endpoint);
     }
     @Step("Send PUT request")
     public static Response putRequest(String endpoint, Object requestBody) {
-        return RestAssured.given()
+        return request
                 .contentType(ContentType.JSON)
                 .body(requestBody)
                 .put(endpoint);
