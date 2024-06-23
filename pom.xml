@@ -16,6 +16,8 @@
         <encoding>UTF-8</encoding>
         <tags></tags>
         <webdriver.base.url></webdriver.base.url>
+        <api.base.url></api.base.url>
+        <serenity.reports.clean>true</serenity.reports.clean>
     </properties>
     <dependencies>
         <dependency>
@@ -123,7 +125,8 @@
                         <include>**/When*.java</include>
                     </includes>
                     <systemPropertyVariables>
-                        <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
+<!--                        <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>-->
+<!--                        <api.base.url>${api.base.url}</api.base.url>-->
                     </systemPropertyVariables>
                     <parallel>classes</parallel>
                     <parallel>methods</parallel>

@@ -1,3 +1,4 @@
+@UI
 Feature: UI Test
 
   Scenario: New user registration

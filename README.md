@@ -21,7 +21,7 @@ We will be testing the following website: https://automationexercise.com
 ## Example Scenarios to Automate
 
 UI- user registration, navigation
-API-Get (product list) and POST (searched product)
+API-Get,POST,PUT and DELETE
 
 ## Project Structure
 ```
@@ -54,12 +54,13 @@ To run the tests with Maven, open the terminal and run (on Mac):
 
 ```
 mvn clean verify
+mvn clean verify -Dcucumber.filter.tags="@api or @ui"
 
 ```
 
 ## Viewing the Test Reports
 
-After running the tests, Serenity BDD reports are generated in HTML format and can be found in the target/site/serenity directory. Open index.html in a web browser to view detailed test reports including test results, screenshots.
+After running the tests, Serenity BDD reports will be generated in HTML format and can be found in the target/site/serenity directory. Open index.html in a web browser to view detailed test reports including test results, screenshots.
 
 ## Adding Tests
 
@@ -78,7 +79,9 @@ To expand the tests in the future:
 
 4. **Add Actions in Respective Action Classes:**
    - Update or create new actions/methods in `actions/` to define actions that can be performed on pages.
-
+   
+5. **Edit/Modify Configuration:**
+   - Edit `/serenity.conf` to modify framework configuration and environment settings.
 ## Resources
 https://github.com/serenity-bdd
 
